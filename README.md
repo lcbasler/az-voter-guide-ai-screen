@@ -32,7 +32,7 @@ AI-written** (Pangram attributes more than half the text to AI).
   statements in the 2022 guide was labelled human-written.
 - **The same people flagged in 2026 were not flagged in 2022.** 59 candidates
   appear in both guides. Six of them are flagged in 2026, and all six scored 0.00
-  on their own 2022 statements (exact McNemar p = 0.031). Their 2026 flags are
+  on their own 2022 statements. Their 2026 flags are
   not explained by a writing style the detector already reacted to.
 
 To check any candidate, open the spreadsheet,
