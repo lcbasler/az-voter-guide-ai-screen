@@ -41,16 +41,6 @@ candidate, score and statement, with live summary formulas and charts.
 
 ![One-page summary of the 2026 screen](ai_detection_onepager.png)
 
-## How to read a flag
-
-- **A flag describes the text, not the candidate.** Campaign staff, a consultant
-  or a volunteer may have drafted a flagged statement.
-- **A flag is a detector output, not an admission.** No candidate has confirmed or
-  denied using AI. Aggregate rates are more reliable than any single
-  classification, and statements run only 75–214 words.
-- **A score of 0.00 means no text was classified as AI-generated.** It does not
-  prove human authorship; three such statements contain some AI-assisted text.
-
 ## Limitations
 
 - **The two years were scored by different model versions.** The 2026 statements
@@ -65,14 +55,9 @@ candidate, score and statement, with live summary formulas and charts.
   guide separates them and only the statement was scored. Length does not explain
   the gap: 2022 flagged 0% of statements under 150, 150–199 and 200+ words,
   while 2026 flagged 27%, 32% and 33%.
-- **AI writing tools existed before ChatGPT** (for example, GPT-3 products such as
-  Jasper), so the 2022 rate is an upper bound on the false-positive rate.
 - **The Commission may have edited lightly for layout.** The guide says
   statements were reproduced as submitted, but that "non-substantive editing may
   have occurred for layout purposes."
-- **One 2026 statement includes biography.** Mariana Sandoval's printed statement
-  field (`p098-2`) opens with 82 words of biography; the whole field was scored as
-  published.
 
 ## Data
 
@@ -106,12 +91,6 @@ scripts use only the Python standard library plus `pdftotext`
     python3 scripts/extract_statements.py       # 2026 PDF (in repo root) -> data/
     python3 scripts/run_pangram.py --dry-run    # cost estimate, no network
     python3 scripts/run_pangram.py              # billed; needs PANGRAM_API_KEY
-
-Scoring costs about $0.04 per 100-word block (about $16 for the 2026 guide).
-The 2022 guide was parsed and scored the same way, with small changes for its
-layout.
-
-Analysis by Luke Basler, with Claude (Anthropic) as a coding and analysis assistant.
 
 ## License
 
