@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+*.pdf
+data/candidate_statements.json
+data/candidate_statements.csv
+data/**/pangram_*.json
